@@ -54,3 +54,8 @@ To destroy the containers, execute:
 ```
 docker-compose down --rmi all
 ```
+
+
+### Time spent 
+
+About ~ 2 hours.  I don't code python daily. 
