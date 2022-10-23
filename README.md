@@ -2,9 +2,9 @@
 
 A simple example of a url shortener.  
 
-Example, given a url https://www.google.com/?t=3922&usa=1&private=false 
+Example, given a url [ EG https://www.google.com/?t=3922&usa=1&private=false ] 
 
-Create a short url https://[domain]/r/[shortcode]
+Create a short url https://[domain]/r/[shortcode]  [ EG http://localhost:8181/r/3928 ]
 
 
 ## View all short codes 
