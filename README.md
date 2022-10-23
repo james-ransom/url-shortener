@@ -6,6 +6,27 @@ Example, given a url https://www.google.com/?t=3922&usa=1&private=false
 
 Create a short url https://[domain]/r/[shortcode]
 
+
+## View all short codes 
+<img src="https://i.imgur.com/nnp6yJT.png" width="1024"/>
+
+
+
+## Add new short code 
+<img src="https://i.imgur.com/gVAzyol.png" width="1024"/>
+
+## Test a short code 
+```
+http://[domain]/r/[code]
+```
+Example: 
+```
+localhost:8181/r/3928
+```
+
+
+
+
 #### Running on Docker
 
 ```
