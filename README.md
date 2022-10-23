@@ -31,9 +31,8 @@ localhost:8181/r/3928
 
 ```
 docker-compose up -d
-
 ```
-
+^^ Then test with http://localhost:8181/ 
 
 #### Viewing logs on Docker
 
@@ -48,7 +47,7 @@ $ docker logs -f dc81eaa56ef0
 ```
 
 
-After executing, you will have 2 running cointainers on your Docker host: `urlshortner-app` and `urlshortner-mysql`. For accessing the web application, open your browser and go to http://your-docker-host-ip-address:8181
+After executing, you will have 2 running cointainers on your Docker host: `urlshortner-app` and `urlshortner-mysql`. For accessing the web application, open your browser and go to http://localhost:8181
 
 To destroy the containers, execute:
 
