@@ -2,9 +2,9 @@
 
 A simple example of a url shortener.  
 
-Example, given a url [ EG https://www.google.com/?t=3922&usa=1&private=false ] 
+Example, given a url ( EG https://www.google.com/?t=3922&usa=1&private=false )
 
-Create a short url https://[domain]/r/[shortcode]  [ EG http://localhost:8181/r/3928 ]
+Create a short url https://[domain]/r/[shortcode]  ( EG http://localhost:8181/r/3928 )
 
 
 ## View all short codes 
@@ -37,11 +37,12 @@ docker-compose up -d
 
 #### Viewing logs on Docker
 
+Use the container id and stream the logs
 ```
 $ docker ps
 CONTAINER ID   IMAGE                             COMMAND                  CREATED         STATUS         PORTS                                       NAMES
-dc81eaa56ef0   url-shortener_urlshortner-app     "python server.py"       7 minutes ago   Up 7 minutes   0.0.0.0:8181->8181/tcp, :::8181->8181/tcp   urlshortner-app
-a692a2501621   url-shortener_urlshortner-mysql   "docker-entrypoint.s…"   7 minutes ago   Up 7 minutes   3306/tcp                                    urlshortner-mysql
+dc81eaa56ef0   url-shortener_urlshortner-app     "python server.py"       7 minutes ago   Up 7 minutes   
+
 $ docker logs -f dc81eaa56ef0 
 
 ```
