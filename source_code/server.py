@@ -21,6 +21,7 @@ def index():
 
     return render_template('index.html', data = data)
 
+''''https://stackoverflow.com/questions/2257441/random-string-generation-with-upper-case-letters-and-digits'''
 def id_generator(size=6, chars=string.ascii_uppercase + string.digits):
     return ''.join(random.choice(chars) for _ in range(size))
 
@@ -43,6 +44,7 @@ def add():
 @app.route('/addshortcode', methods = ['POST', 'GET'])
 def addshortcode():
     if request.method == 'POST' and request.form['save']:
+        # ok the id_generator() could return something that clashes, it would be smarter to check if the code already exists, then generate a new one 
         if db.insert(request.form['url'], id_generator()):
             flash("A new Short Code has been added")
         else:
